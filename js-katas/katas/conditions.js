@@ -6,22 +6,28 @@ function fizzBuzz(n = 100) {
   // Return an array of values for 1..n following FizzBuzz rules.
   // Example: fizzBuzz(5) -> [1, 2, "Fizz", 4, "Buzz"]
   // Explain your logic choices in comments as you code.
-  // Purpose: Return an array
 
-for(let i = 1; i <= 20; i++ ){ //count from 1 to 10, stop at 10
+  //No negative numbers
+  if(n <1){
+    throw new Error('n must be positive');
+  }
+  // Purpose: Return an array
+const results = [];
+for(let i = 1; i <= n; i += 1 ){ //count from 1 to 10, stop at 10
   if(i % 15 ===0){  //% = dividie and remainder, i is divisible by 15
-    console.log("fizzbuzz");
+    results.push("FizzBuzz");
   }else if(i % 3 ===0){
-    console.log("fizz");
+    results.push("Fizz");
   } else if(i % 5 ===0){
-    console.log("buzz");
+    results.push("Buzz");
   }
   else{
-    console.log(i);
+    results.push(i);
   }
 }
+return results;
 
 }
-
+fizzBuzz(5);
 globalThis.__katas = globalThis.__katas || {};
 globalThis.__katas.fizzBuzz = fizzBuzz;
