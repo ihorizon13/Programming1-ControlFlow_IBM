@@ -6,12 +6,13 @@ function fizzBuzz(n = 100) {
   // Return an array of values for 1..n following FizzBuzz rules.
   // Example: fizzBuzz(5) -> [1, 2, "Fizz", 4, "Buzz"]
   // Explain your logic choices in comments as you code.
-
+  
   //No negative numbers
   if(n <1){
     throw new Error('n must be positive');
   }
   // Purpose: Return an array
+
 const results = [];
 for(let i = 1; i <= n; i += 1 ){ //count from 1 to 10, stop at 10
   if(i % 15 ===0){  //% = dividie and remainder, i is divisible by 15
