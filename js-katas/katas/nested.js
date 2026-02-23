@@ -3,10 +3,26 @@
 
 function multiplicationTable(size = 10) {
   // TODO: write your solution here (replace the line below).
-  // Return a 2D array (array of rows) with size rows and size columns.
-  // Example: multiplicationTable(3) -> [[1,2,3],[2,4,6],[3,6,9]]
-  // Explain your logic choices in comments as you code.
+if(size < 0){ //setting the parameters
   throw new Error('Not implemented');
+  }
+
+  const resultTable = [];
+for(let a  = 1; a <= 10; a++){ //first number "row" being multiplied
+
+  for(let b = 1; b <=10; b++){ //nested loop, second number "column" being multiplied
+    console.log(a*b);  // row * column
+
+  }
+  
+}
+
+
+  
+
+
+
+
 }
 
 globalThis.__katas = globalThis.__katas || {};
